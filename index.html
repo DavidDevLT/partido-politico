@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Alianza por el Progreso — Trayectoria, logros de gestión y plan de gobierno para el próximo período. Transparencia, propuestas y participación ciudadana.">
+  <meta name="keywords" content="partido político, plan de gobierno, gestión pública, elecciones, transparencia">
+  <meta name="author" content="Alianza por el Progreso">
+  <meta property="og:title" content="Alianza por el Progreso | Juntos construimos el futuro">
+  <meta property="og:description" content="Conoce nuestros logros, propuestas y únete al cambio que el país necesita.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?w=1200&q=80">
+  <meta name="twitter:card" content="summary_large_image">
+  <title>Alianza por el Progreso | Plan de Gobierno y Gestión</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Barra de accesibilidad y utilidades -->
+  <a href="#contenido-principal" class="skip-link">Saltar al contenido principal</a>
+
+  <!-- Navegación principal -->
+  <header class="header" id="header">
+    <nav class="nav container" aria-label="Navegación principal">
+      <a href="#" class="nav__logo" aria-label="Alianza por el Progreso - Inicio">
+        <span class="nav__logo-icon" aria-hidden="true">APP</span>
+        <span class="nav__logo-text">Alianza por el Progreso</span>
+      </a>
+      <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav__menu" id="navMenu">
+        <li><a href="#logros">Logros</a></li>
+        <li><a href="#galeria">Obras</a></li>
+        <li><a href="#videos">Videos</a></li>
+        <li><a href="#propuestas">Propuestas</a></li>
+        <li><a href="#noticias">Noticias</a></li>
+        <li><a href="#participa">Participa</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+      <div class="nav__actions">
+        <button class="btn-icon" id="searchToggle" aria-label="Buscar contenido">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+        </button>
+        <button class="btn-icon" id="themeToggle" aria-label="Cambiar tema claro/oscuro">
+          <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+          <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+        <a href="#participa" class="btn btn--primary btn--sm">Únete</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Modal de búsqueda -->
+  <div class="search-modal" id="searchModal" role="dialog" aria-labelledby="searchTitle" aria-hidden="true">
+    <div class="search-modal__backdrop" id="searchBackdrop"></div>
+    <div class="search-modal__content">
+      <h2 id="searchTitle" class="visually-hidden">Buscar en el sitio</h2>
+      <input type="search" id="searchInput" class="search-modal__input" placeholder="Buscar logros, propuestas, noticias..." autocomplete="off">
+      <ul class="search-modal__results" id="searchResults" role="listbox"></ul>
+      <button class="search-modal__close" id="searchClose" aria-label="Cerrar búsqueda">&times;</button>
+    </div>
+  </div>
+
+  <main id="contenido-principal">
+    <!-- 1. Hero Principal -->
+    <section class="hero" id="inicio" aria-label="Presentación principal">
+      <div class="hero__video-wrap">
+        <video class="hero__video" autoplay muted loop playsinline poster="https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?w=1920&q=80">
+          <source src="https://assets.mixkit.co/videos/preview/mixkit-people-walking-in-the-city-at-night-4283-large.mp4" type="video/mp4">
+        </video>
+        <div class="hero__overlay"></div>
+      </div>
+      <div class="hero__content container reveal">
+        <p class="hero__badge">Elecciones 2026</p>
+        <h1 class="hero__title">Alianza por el Progreso</h1>
+        <p class="hero__slogan">Juntos construimos el futuro que merecemos</p>
+        <div class="hero__cta">
+          <a href="#logros" class="btn btn--primary btn--lg">Conoce nuestros logros</a>
+          <a href="#propuestas" class="btn btn--outline btn--lg">Plan de Gobierno</a>
+        </div>
+      </div>
+      <a href="#lider" class="hero__scroll" aria-label="Desplazarse hacia abajo">
+        <span></span>
+      </a>
+    </section>
+
+    <!-- 2. Mensaje del Líder -->
+    <section class="section section--leader" id="lider">
+      <div class="container leader reveal">
+        <div class="leader__image-wrap">
+          <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=600&q=80" alt="Dra. María Elena Vargas, candidata presidencial" class="leader__image" width="480" height="600" loading="lazy">
+          <div class="leader__badge">Candidata Presidencial</div>
+        </div>
+        <div class="leader__content">
+          <span class="section__label">Mensaje institucional</span>
+          <h2 class="section__title">Una gestión con resultados, una visión para el mañana</h2>
+          <blockquote class="leader__quote">
+            <p>"Nuestra prioridad siempre ha sido la gente: obras que transforman comunidades, programas que llegan a quien más lo necesita y una administración abierta a la rendición de cuentas. El próximo período será de continuidad con innovación: más inversión social, más empleo digno y un Estado al servicio de todos."</p>
+          </blockquote>
+          <p class="leader__text"><strong>Dra. María Elena Vargas</strong> — Líder de Alianza por el Progreso</p>
+          <ul class="leader__objectives">
+            <li>Reducir la pobreza extrema en un 35% en cuatro años</li>
+            <li>Universalizar la educación técnica de calidad</li>
+            <li>Modernizar la infraestructura vial y digital del país</li>
+            <li>Garantizar transparencia total en la gestión pública</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Logros de Gestión -->
+    <section class="section section--stats" id="logros">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="section__label">Gestión 2022–2026</span>
+          <h2 class="section__title">Logros que transforman vidas</h2>
+          <p class="section__subtitle">Indicadores verificables de una administración comprometida con resultados tangibles.</p>
+        </div>
+        <div class="stats-grid">
+          <article class="stat-card reveal" data-delay="0">
+            <div class="stat-card__icon" aria-hidden="true">🏗️</div>
+            <span class="stat-card__number" data-target="1247">0</span>
+            <span class="stat-card__label">Obras ejecutadas</span>
+          </article>
+          <article class="stat-card reveal" data-delay="100">
+            <div class="stat-card__icon" aria-hidden="true">🏫</div>
+            <span class="stat-card__number" data-target="186">0</span>
+            <span class="stat-card__label">Centros educativos construidos</span>
+          </article>
+          <article class="stat-card reveal" data-delay="200">
+            <div class="stat-card__icon" aria-hidden="true">🏥</div>
+            <span class="stat-card__number" data-target="42">0</span>
+            <span class="stat-card__label">Hospitales implementados</span>
+          </article>
+          <article class="stat-card reveal" data-delay="300">
+            <div class="stat-card__icon" aria-hidden="true">🛣️</div>
+            <span class="stat-card__number" data-target="3840">0</span>
+            <span class="stat-card__suffix">km</span>
+            <span class="stat-card__label">Carreteras rehabilitadas</span>
+          </article>
+          <article class="stat-card reveal" data-delay="400">
+            <div class="stat-card__icon" aria-hidden="true">🤝</div>
+            <span class="stat-card__number" data-target="89">0</span>
+            <span class="stat-card__label">Programas sociales ejecutados</span>
+          </article>
+          <article class="stat-card reveal" data-delay="500">
+            <div class="stat-card__icon" aria-hidden="true">👥</div>
+            <span class="stat-card__number" data-target="2100000">0</span>
+            <span class="stat-card__label">Beneficiarios alcanzados</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Galería de Obras -->
+    <section class="section" id="galeria">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="section__label">Galería</span>
+          <h2 class="section__title">Obras que hablan por sí solas</h2>
+        </div>
+        <div class="gallery-filters reveal" role="tablist" aria-label="Filtrar obras por categoría">
+          <button class="gallery-filter active" data-filter="all" role="tab" aria-selected="true">Todas</button>
+          <button class="gallery-filter" data-filter="educacion" role="tab">Educación</button>
+          <button class="gallery-filter" data-filter="salud" role="tab">Salud</button>
+          <button class="gallery-filter" data-filter="infraestructura" role="tab">Infraestructura</button>
+          <button class="gallery-filter" data-filter="seguridad" role="tab">Seguridad</button>
+          <button class="gallery-filter" data-filter="social" role="tab">Desarrollo social</button>
+        </div>
+        <div class="gallery-grid" id="galleryGrid">
+          <figure class="gallery-item reveal" data-category="educacion">
+            <img src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=600&q=80" alt="Nueva escuela en zona rural" loading="lazy">
+            <figcaption>Escuela Bicentenario — Región Norte</figcaption>
+          </figure>
+          <figure class="gallery-item reveal" data-category="salud">
+            <img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=600&q=80" alt="Hospital regional inaugurado" loading="lazy">
+            <figcaption>Hospital Regional San Martín</figcaption>
+          </figure>
+          <figure class="gallery-item reveal" data-category="infraestructura">
+            <img src="https://images.unsplash.com/photo-1545558014-8692077e9b5c?w=600&q=80" alt="Puente vial estratégico" loading="lazy">
+            <figcaption>Puente Vial del Valle Central</figcaption>
+          </figure>
+          <figure class="gallery-item reveal" data-category="seguridad">
+            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80" alt="Centro de monitoreo ciudadano" loading="lazy">
+            <figcaption>Centro de Monitoreo Ciudadano</figcaption>
+          </figure>
+          <figure class="gallery-item reveal" data-category="social">
+            <img src="https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?w=600&q=80" alt="Programa vivienda digna" loading="lazy">
+            <figcaption>Programa Vivienda Digna — 5.000 familias</figcaption>
+          </figure>
+          <figure class="gallery-item reveal" data-category="educacion">
+            <img src="https://images.unsplash.com/photo-1503676260728-1c00da280a02?w=600&q=80" alt="Laboratorio tecnológico escolar" loading="lazy">
+            <figcaption>Laboratorios STEAM en 120 colegios</figcaption>
+          </figure>
+          <figure class="gallery-item reveal" data-category="infraestructura">
+            <img src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=600&q=80" alt="Avenida renovada" loading="lazy">
+            <figcaption>Corredor Metropolitano Sur</figcaption>
+          </figure>
+          <figure class="gallery-item reveal" data-category="salud">
+            <img src="https://images.unsplash.com/photo-1631217868264-e5b1a5fe1b0a?w=600&q=80" alt="Centro de salud comunitario" loading="lazy">
+            <figcaption>Centros de Salud Familiar — 28 distritos</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modal galería -->
+    <div class="gallery-modal" id="galleryModal" role="dialog" aria-modal="true" aria-labelledby="galleryModalTitle" hidden>
+      <button class="gallery-modal__close" id="galleryModalClose" aria-label="Cerrar imagen">&times;</button>
+      <img src="" alt="" id="galleryModalImg" class="gallery-modal__img">
+      <p id="galleryModalTitle" class="gallery-modal__caption"></p>
+    </div>
+
+    <!-- 5. Biblioteca de Videos -->
+    <section class="section section--alt" id="videos">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="section__label">Multimedia</span>
+          <h2 class="section__title">Biblioteca de videos</h2>
+        </div>
+        <div class="video-tabs reveal" role="tablist">
+          <button class="video-tab active" data-tab="institucional">Institucionales</button>
+          <button class="video-tab" data-tab="discursos">Discursos</button>
+          <button class="video-tab" data-tab="testimonios">Testimonios</button>
+          <button class="video-tab" data-tab="gestion">Resúmenes de gestión</button>
+        </div>
+        <div class="video-grid" id="videoGrid">
+          <article class="video-card reveal" data-category="institucional">
+            <div class="video-card__embed">
+              <iframe src="https://www.youtube-nocookie.com/embed/ScMzIvxBSi4" title="Mensaje institucional 2026" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <h3>Mensaje institucional 2026</h3>
+          </article>
+          <article class="video-card reveal" data-category="discursos">
+            <div class="video-card__embed">
+              <iframe src="https://www.youtube-nocookie.com/embed/aqz-KE-bpKQ" title="Discurso de proclamación" loading="lazy" allowfullscreen></iframe>
+            </div>
+            <h3>Discurso de proclamación</h3>
+          </article>
+          <article class="video-card reveal" data-category="testimonios">
+            <div class="video-card__embed">
+              <iframe src="https://www.youtube-nocookie.com/embed/LXb3EKWsInQ" title="Testimonio ciudadano" loading="lazy" allowfullscreen></iframe>
+            </div>
+            <h3>Voces de la comunidad</h3>
+          </article>
+          <article class="video-card reveal" data-category="gestion">
+            <div class="video-card__embed">
+              <iframe src="https://www.youtube-nocookie.com/embed/jNQXAC9IVRw" title="Informe de gestión 2025" loading="lazy" allowfullscreen></iframe>
+            </div>
+            <h3>Informe de gestión 2025</h3>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. Línea de Tiempo -->
+    <section class="section" id="cronologia">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="section__label">Historia</span>
+          <h2 class="section__title">Línea de tiempo de la gestión</h2>
+        </div>
+        <div class="timeline" id="timeline">
+          <article class="timeline-item reveal active" data-year="2022">
+            <div class="timeline-item__marker"></div>
+            <div class="timeline-item__content">
+              <time datetime="2022-01">Enero 2022</time>
+              <h3>Inicio de gestión</h3>
+              <p>Toma de posesión y presentación del plan quinquenal con participación ciudadana.</p>
+            </div>
+          </article>
+          <article class="timeline-item reveal" data-year="2022">
+            <div class="timeline-item__marker"></div>
+            <div class="timeline-item__content">
+              <time datetime="2022-06">Junio 2022</time>
+              <h3>Programa Salud para Todos</h3>
+              <p>Lanzamiento de cobertura universal en zonas rurales — 1.2 millones de beneficiarios.</p>
+            </div>
+          </article>
+          <article class="timeline-item reveal" data-year="2023">
+            <div class="timeline-item__marker"></div>
+            <div class="timeline-item__content">
+              <time datetime="2023-03">Marzo 2023</time>
+              <h3>Obra emblemática: Puente del Valle</h3>
+              <p>Inauguración del mayor proyecto vial del período, conectando 4 provincias.</p>
+            </div>
+          </article>
+          <article class="timeline-item reveal" data-year="2024">
+            <div class="timeline-item__marker"></div>
+            <div class="timeline-item__content">
+              <time datetime="2024-09">Septiembre 2024</time>
+              <h3>Reconocimiento internacional</h3>
+              <p>Premio a la innovación en gobierno digital por la OEA.</p>
+            </div>
+          </article>
+          <article class="timeline-item reveal" data-year="2025">
+            <div class="timeline-item__marker"></div>
+            <div class="timeline-item__content">
+              <time datetime="2025-11">Noviembre 2025</time>
+              <h3>Meta educativa cumplida</h3>
+              <p>100% de matrícula en educación primaria en todo el territorio nacional.</p>
+            </div>
+          </article>
+        </div>
+        <div class="timeline-nav reveal">
+          <button class="timeline-nav__btn" id="timelinePrev" aria-label="Evento anterior">← Anterior</button>
+          <button class="timeline-nav__btn" id="timelineNext" aria-label="Siguiente evento">Siguiente →</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. Propuestas -->
+    <section class="section section--alt" id="propuestas">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="section__label">Plan 2026–2030</span>
+          <h2 class="section__title">Propuestas para el próximo gobierno</h2>
+        </div>
+        <div class="proposals-grid">
+          <article class="proposal-card reveal">
+            <div class="proposal-card__icon" aria-hidden="true">📈</div>
+            <h3>Economía</h3>
+            <p>Estímulo a la inversión productiva, apoyo a MIPYMES y estabilidad macroeconómica responsable.</p>
+          </article>
+          <article class="proposal-card reveal">
+            <div class="proposal-card__icon" aria-hidden="true">📚</div>
+            <h3>Educación</h3>
+            <p>Educación gratuita de calidad, becas universitarias y formación técnica alineada al mercado laboral.</p>
+          </article>
+          <article class="proposal-card reveal">
+            <div class="proposal-card__icon" aria-hidden="true">💊</div>
+            <h3>Salud</h3>
+            <p>Sistema universal, medicamentos esenciales gratuitos y fortalecimiento de atención primaria.</p>
+          </article>
+          <article class="proposal-card reveal">
+            <div class="proposal-card__icon" aria-hidden="true">🛡️</div>
+            <h3>Seguridad ciudadana</h3>
+            <p>Prevención comunitaria, tecnología de monitoreo y reforma integral del sistema judicial.</p>
+          </article>
+          <article class="proposal-card reveal">
+            <div class="proposal-card__icon" aria-hidden="true">💡</div>
+            <h3>Tecnología e innovación</h3>
+            <p>Gobierno digital, conectividad rural y hubs de emprendimiento tecnológico.</p>
+          </article>
+          <article class="proposal-card reveal">
+            <div class="proposal-card__icon" aria-hidden="true">🌱</div>
+            <h3>Medio ambiente</h3>
+            <p>Energías renovables, reforestación masiva y economía circular con incentivos fiscales.</p>
+          </article>
+          <article class="proposal-card reveal">
+            <div class="proposal-card__icon" aria-hidden="true">💼</div>
+            <h3>Empleo y emprendimiento</h3>
+            <p>500.000 empleos formales, créditos blandos y capacitación laboral continua.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. Testimonios -->
+    <section class="section" id="testimonios">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="section__label">Voces ciudadanas</span>
+          <h2 class="section__title">Lo que dice la gente</h2>
+        </div>
+        <div class="testimonials-carousel reveal" aria-live="polite">
+          <div class="testimonials-track" id="testimonialsTrack">
+            <blockquote class="testimonial-slide active">
+              <p>"Gracias al programa de vivienda digna, mi familia tiene un hogar seguro. Por primera vez veo resultados reales en mi barrio."</p>
+              <footer><cite>— Carmen Ruiz</cite>, beneficiaria, Lima Este</footer>
+            </blockquote>
+            <blockquote class="testimonial-slide">
+              <p>"Los nuevos laboratorios en el colegio de mi hija cambiaron su futuro. Ahora quiere estudiar ingeniería."</p>
+              <footer><cite>— Roberto Méndez</cite>, padre de familia, Arequipa</footer>
+            </blockquote>
+            <blockquote class="testimonial-slide">
+              <p>"Como líder comunitario, valoro la transparencia y el diálogo permanente con las autoridades."</p>
+              <footer><cite>— Ana Lucía Torres</cite>, presidenta vecinal, Trujillo</footer>
+            </blockquote>
+          </div>
+          <div class="testimonials-dots" id="testimonialsDots" role="tablist" aria-label="Seleccionar testimonio"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. Noticias -->
+    <section class="section section--alt" id="noticias">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="section__label">Actualidad</span>
+          <h2 class="section__title">Noticias y actividades</h2>
+        </div>
+        <div class="news-grid">
+          <article class="news-card reveal">
+            <span class="news-card__tag">Comunicado</span>
+            <time datetime="2026-05-28">28 mayo 2026</time>
+            <h3>Presentación oficial del Plan de Gobierno 2026–2030</h3>
+            <p>Documento completo disponible para descarga en la sección de transparencia.</p>
+            <a href="#transparencia" class="news-card__link">Leer más →</a>
+          </article>
+          <article class="news-card reveal">
+            <span class="news-card__tag">Evento</span>
+            <time datetime="2026-06-05">5 junio 2026</time>
+            <h3>Gran mitin ciudadano — Plaza de la Constitución</h3>
+            <p>Únete a miles de ciudadanos en el evento central de campaña.</p>
+            <a href="#participa" class="news-card__link">Registrarse →</a>
+          </article>
+          <article class="news-card reveal">
+            <span class="news-card__tag">Agenda</span>
+            <time datetime="2026-06-10">10 junio 2026</time>
+            <h3>Gira nacional: Foros de propuesta por región</h3>
+            <p>Escucha ciudadana en 12 departamentos durante dos semanas.</p>
+            <a href="#participa" class="news-card__link">Ver agenda →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 10. Transparencia -->
+    <section class="section" id="transparencia">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="section__label">Rendición de cuentas</span>
+          <h2 class="section__title">Transparencia y documentos</h2>
+        </div>
+        <div class="transparency-grid reveal">
+          <div class="transparency-chart">
+            <h3>Cumplimiento del plan de gobierno</h3>
+            <div class="progress-bars">
+              <div class="progress-item">
+                <label>Infraestructura <span>92%</span></label>
+                <div class="progress-bar"><div class="progress-fill" style="width: 92%"></div></div>
+              </div>
+              <div class="progress-item">
+                <label>Salud <span>88%</span></label>
+                <div class="progress-bar"><div class="progress-fill" style="width: 88%"></div></div>
+              </div>
+              <div class="progress-item">
+                <label>Educación <span>95%</span></label>
+                <div class="progress-bar"><div class="progress-fill" style="width: 95%"></div></div>
+              </div>
+              <div class="progress-item">
+                <label>Desarrollo social <span>90%</span></label>
+                <div class="progress-bar"><div class="progress-fill" style="width: 90%"></div></div>
+              </div>
+            </div>
+            <p class="transparency-budget"><strong>Presupuesto ejecutado:</strong> 94.2% del total asignado (verificado por Contraloría)</p>
+          </div>
+          <div class="transparency-docs">
+            <h3>Documentos descargables</h3>
+            <ul class="doc-list">
+              <li><a href="#" download>Informe de gestión 2025 (PDF)</a></li>
+              <li><a href="#" download>Auditoría financiera 2024 (PDF)</a></li>
+              <li><a href="#" download>Plan de Gobierno 2026–2030 (PDF)</a></li>
+              <li><a href="#" download>Memoria de obras ejecutadas (PDF)</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 11. Equipo -->
+    <section class="section section--alt" id="equipo">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="section__label">Nuestro equipo</span>
+          <h2 class="section__title">Autoridades y equipo de trabajo</h2>
+        </div>
+        <div class="team-grid">
+          <article class="team-card reveal">
+            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&q=80" alt="Dra. María Elena Vargas" loading="lazy">
+            <h3>Dra. María Elena Vargas</h3>
+            <p class="team-card__role">Candidata Presidencial</p>
+            <p>Economista con 20 años de experiencia en gestión pública y desarrollo social.</p>
+          </article>
+          <article class="team-card reveal">
+            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&q=80" alt="Ing. Carlos Mendoza" loading="lazy">
+            <h3>Ing. Carlos Mendoza</h3>
+            <p class="team-card__role">Candidato a Vicepresidencia</p>
+            <p>Experto en infraestructura y planificación urbana sostenible.</p>
+          </article>
+          <article class="team-card reveal">
+            <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&q=80" alt="Lic. Patricia Solís" loading="lazy">
+            <h3>Lic. Patricia Solís</h3>
+            <p class="team-card__role">Secretaria General</p>
+            <p>Abogada especializada en derechos humanos y participación ciudadana.</p>
+          </article>
+          <article class="team-card reveal">
+            <img src="https://images.unsplash.com/photo-1519081908943-3793c7314500?w=400&q=80" alt="Dr. Luis Herrera" loading="lazy">
+            <h3>Dr. Luis Herrera</h3>
+            <p class="team-card__role">Director de Programa de Salud</p>
+            <p>Médico epidemiólogo, ex director de OPS para la región.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 12. Participa -->
+    <section class="section" id="participa">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="section__label">Tu voz cuenta</span>
+          <h2 class="section__title">Participa con nosotros</h2>
+        </div>
+        <form class="participate-form reveal" id="participateForm" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="nombre">Nombre completo *</label>
+              <input type="text" id="nombre" name="nombre" required autocomplete="name">
+            </div>
+            <div class="form-group">
+              <label for="email">Correo electrónico *</label>
+              <input type="email" id="email" name="email" required autocomplete="email">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="telefono">Teléfono</label>
+            <input type="tel" id="telefono" name="telefono" autocomplete="tel">
+          </div>
+          <fieldset class="form-fieldset">
+            <legend>¿Cómo deseas participar?</legend>
+            <label class="checkbox-label"><input type="checkbox" name="interes" value="afiliado"> Afiliarme al partido</label>
+            <label class="checkbox-label"><input type="checkbox" name="interes" value="voluntario"> Ser voluntario de campaña</label>
+            <label class="checkbox-label"><input type="checkbox" name="interes" value="eventos"> Registrarme para eventos</label>
+            <label class="checkbox-label"><input type="checkbox" name="interes" value="noticias"> Recibir noticias y novedades</label>
+          </fieldset>
+          <div class="form-group">
+            <label for="mensaje">Mensaje (opcional)</label>
+            <textarea id="mensaje" name="mensaje" rows="4"></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary btn--lg">Enviar solicitud</button>
+          <p class="form-feedback" id="formFeedback" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section section--alt" id="faq">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="section__label">Preguntas frecuentes</span>
+          <h2 class="section__title">Resolvemos tus dudas</h2>
+        </div>
+        <div class="faq-list reveal" id="faqList">
+          <details class="faq-item">
+            <summary>¿Cómo puedo afiliarme al partido?</summary>
+            <p>Puedes completar el formulario en la sección Participa marcando "Afiliarme al partido", o acercarte a cualquiera de nuestras sedes departamentales con tu documento de identidad.</p>
+          </details>
+          <details class="faq-item">
+            <summary>¿Dónde puedo consultar los informes de gestión?</summary>
+            <p>Todos los informes auditados están disponibles en la sección de Transparencia, en formato PDF descargable.</p>
+          </details>
+          <details class="faq-item">
+            <summary>¿Cómo se financian las campañas?</summary>
+            <p>Cumplimos estrictamente la normativa electoral. Publicamos reportes trimestrales de donaciones en la sección de transparencia.</p>
+          </details>
+          <details class="faq-item">
+            <summary>¿Cuándo son las próximas elecciones?</summary>
+            <p>Las elecciones generales están programadas para octubre de 2026. Consulta el calendario electoral oficial del organismo competente.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- 13. Redes Sociales -->
+    <section class="section social-section" id="redes">
+      <div class="container reveal">
+        <h2 class="section__title section__title--center">Síguenos en redes</h2>
+        <div class="social-links">
+          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          </a>
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+          </a>
+          <a href="https://x.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="X (Twitter)">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </a>
+          <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="YouTube">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+          </a>
+          <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="TikTok">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.45-.72.63-1.58.67-2.42.03-2.96.01-5.93.02-8.88z"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 14. Footer -->
+  <footer class="footer" id="contacto">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <span class="nav__logo-icon">APP</span>
+        <h2>Alianza por el Progreso</h2>
+        <p>Construyendo un país más justo, próspero y transparente para todas y todos.</p>
+      </div>
+      <div class="footer__links">
+        <h3>Enlaces rápidos</h3>
+        <ul>
+          <li><a href="#logros">Logros</a></li>
+          <li><a href="#propuestas">Plan de Gobierno</a></li>
+          <li><a href="#transparencia">Transparencia</a></li>
+          <li><a href="#participa">Participa</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="footer__contact">
+        <h3>Contacto</h3>
+        <address>
+          <p>Av. República 450, Lima 01, Perú</p>
+          <p><a href="mailto:contacto@alianzaprogreso.org">contacto@alianzaprogreso.org</a></p>
+          <p><a href="tel:+5114567890">+51 1 456-7890</a></p>
+        </address>
+      </div>
+      <div class="footer__map">
+        <h3>Ubicación</h3>
+        <iframe
+          title="Mapa de sede central"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.962489711!2d-77.042793!3d-12.046374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c6f84fa3b483%3A0x4f601852662b9694!2sLima%2C%20Per%C3%BA!2m2!1s-12.046374!2d-77.042793!5e0!3m2!1ses!2spe!4v1700000000000"
+          width="100%"
+          height="180"
+          style="border:0;"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+    <div class="footer__bottom container">
+      <p>&copy; 2026 Alianza por el Progreso. Todos los derechos reservados.</p>
+      <p class="footer__legal"><a href="#">Política de privacidad</a> · <a href="#">Términos de uso</a></p>
+    </div>
+  </footer>
+
+  <!-- WhatsApp flotante -->
+  <a href="https://wa.me/51987654321?text=Hola,%20quiero%20más%20información%20sobre%20Alianza%20por%20el%20Progreso" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.882 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>

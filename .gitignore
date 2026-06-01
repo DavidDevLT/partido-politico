@@ -1,0 +1,32 @@
+# Dependencias y builds
+node_modules/
+dist/
+build/
+
+# Entorno y secretos
+.env
+.env.*
+!.env.example
+*.pem
+credentials.json
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editores e IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs y caché
+*.log
+npm-debug.log*
+.cache/
+
+# Archivos temporales
+*.tmp
+*.temp
